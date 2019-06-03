@@ -1,0 +1,114 @@
+
+/***************************************
+	VAR
+***************************************/
+:root {
+    --primary: #343434;
+    --secondary: #F1F1F1;
+    --tertiary: 0;
+
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --green: #76C752;
+    --red: #ED3737;
+    --orange: #FFA500;
+    --blue: #3787E9;
+
+    --green_dark: #699F50;
+    --red_dark: #B54848;
+    --orange_dark: #C38D29;
+    --blue_dark: #4471A9;
+
+    --grey_min: #C5C5C5;
+    --grey_medium: #898989;
+    --grey_max: #373737;
+
+    --font_dark: #484848;
+    --font_light: #FFFFFF;
+    --font_blue: #005AFF;
+
+    --transparent_light_min: rgba(255,255,255,0.1);
+    --transparent_light_medium: rgba(255,255,255,0.2);
+    --transparent_light_max: rgba(255,255,255,0.4);
+
+    --transparent_dark_min: rgba(0,0,0,0.1);
+    --transparent_dark_medium: rgba(0,0,0,0.2);
+    --transparent_dark_max: rgba(0,0,0,0.4);
+
+    --gradient_blue_green: linear-gradient(45deg, var(--blue), var(--green));
+}
+
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    min-height: 100%;
+    padding-bottom: 420px;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+/***************************************
+	Cartes biens
+***************************************/
+.little_desc {
+    margin: 20px 0;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0.5px 0.5px 4px #A7A7A7;
+}
+.little_desc:hover {
+    box-shadow: 0.5px 0.5px 20px #4B515D;
+    transition: 0.6s;
+}
+.little_desc .titre {
+    padding: 10px;
+}
+.little_desc .image_bien {
+    width: 180px;
+    display: inline-block;
+    margin: 10px;
+}
+.little_desc .infos {
+    display: inline-block;
+    margin: 10px;
+}
+.little_desc .infos .info_bien, .infos .info_ville{
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 3px;
+    background-color: #bdbdbd;
+}
+.little_desc .infos .prix {
+    margin-top: 20px;
+}
+.little_desc .infos .prix_bien {
+    margin: 5px;
+    border-radius: 3px;
+    background-color: #FFD700;
+    font-size: 23px;
+}
+.little_desc .voir_plus {
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 0 0 8px 8px;
+}
+.little_desc .voir_plus > i {
+    padding-right: 10px;
+}
+.little_desc .voir_plus:hover {
+    transition: 0.6s;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-left: 40px;
+}
